@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Math/CS Quizlet"
+        android:layout_marginTop="15dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardview_q1"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/verify_Q1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="verify"
+                        android:layout_marginTop="150dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/textQuestion1"
+                        android:text="Is the Greatest Common Divisor of 0 and 0, zero?"
+                        android:textAlignment="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/textQuestion1"
+                        android:layout_marginTop="20dp"
+                        android:hint="Enter Your Answer Here"
+                        android:textSize="15sp"
+                        android:id="@+id/answerQuestion1"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardview_q2"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/cardview_q1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/verify_Q2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="verify"
+                        android:layout_marginTop="150dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/textQuestion2"
+                        android:text="Derivative of sin x"
+                        android:textAlignment="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/textQuestion2"
+                        android:layout_marginTop="20dp"
+                        android:hint="Enter Your Answer Here"
+                        android:textSize="15sp"
+                        android:id="@+id/answerQuestion2"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    
+
+
+</RelativeLayout>
